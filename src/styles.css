@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+.fondo{
+    /* background-image: url('https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif');  */
+    background-image: url('/assets/img/coding.gif');
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+    background-size: 100% 59%;
+    
+    
+}
+
+.letras{
+    color: black; 
+    font-weight: bold;
+}
