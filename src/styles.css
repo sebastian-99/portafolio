@@ -12,3 +12,23 @@
     color: black; 
     font-weight: bold;
 }
+
+.letrasNombre{
+    background-color: pink;  
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+.letrasNombreProfesion{
+    background-color: pink;  
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+.divisor{
+    background-color: rgb(27, 111, 207);  
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    
+}
