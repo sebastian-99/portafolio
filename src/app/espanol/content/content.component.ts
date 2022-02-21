@@ -21,5 +21,17 @@ export class ContentComponent{
     });
   }
 
+  correspondencia(){
+
+    this.routes.navigate(['es/correspondencia-utvt']);
+
+  }
+
+  tusismo(){
+
+    this.routes.navigate(['es/turismo-lerma']);
+
+  }
+
 
 }

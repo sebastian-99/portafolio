@@ -10,6 +10,8 @@ import { EspanolComponent } from './espanol/espanol.component';
 import { EncuestaComponent } from './espanol/porfolio/encuesta/encuesta.component';
 import { ContentComponent } from './espanol/content/content.component';
 import { FooterComponent } from './espanol/footer/footer.component';
+import { CorrespondenciaComponent } from './espanol/porfolio/correspondencia/correspondencia.component';
+import { TurismoComponent } from './espanol/porfolio/turismo/turismo.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FooterComponent } from './espanol/footer/footer.component';
     EspanolComponent,
     EncuestaComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    CorrespondenciaComponent,
+    TurismoComponent
   ],
   imports: [
     BrowserModule,
