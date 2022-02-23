@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
@@ -11,7 +12,7 @@ export class ContentComponent{
   constructor(public routes: Router){
 
   }
-  
+
   encuestaCovid(){
    
     this.routes.navigate(['es/retorno-seguro']).then(nav =>{

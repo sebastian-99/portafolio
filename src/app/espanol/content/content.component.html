@@ -14,32 +14,36 @@
     <!-- Main content -->
     <div class="content">
       <div class="container">
-          <div class="card-deck mt-5 mb-5">
-              <div class="card">
-               <a (click)="encuestaCovid()" style="cursor: pointer;">
-                  <img class="card-img-top" src="assets/img/encuesta-covid.png" alt="Card image cap">
-                  <div class="card-body">
-                      <h5 align=center class="card-text">RETORNO SEGURO</h5>
-                  </div>
-                  </a>
-              </div>
-              <div class="card">
-                  <a (click)="correspondencia()" style="cursor: pointer;">
-                  <img class="card-img-top" src="assets/img/correspondencia_utvt.png" alt="Card image cap">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-deck mt-5 mb-5">
+                  <div class="card">
+                  <a (click)="encuestaCovid()" style="cursor: pointer;">
+                      <img class="card-img-top" src="assets/img/encuesta-covid.png" alt="Card image cap">
                       <div class="card-body">
-                        <h5 align=center class="card-text">CORRESPONDENCIA UTVT</h5>
+                          <h5 align=center class="card-text">RETORNO SEGURO</h5>
                       </div>
                       </a>
                   </div>
-              <div class="card">
-                  <a (click)="tusismo()" style="cursor: pointer;">
-                  <img class="card-img-top" src="assets/img/turismo_lerma.png" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 align=center class="card-text">TURISMO LERMA</h5>
+                  <div class="card">
+                      <a (click)="correspondencia()" style="cursor: pointer;">
+                      <img class="card-img-top" src="assets/img/correspondencia_utvt.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 align=center class="card-text">CORRESPONDENCIA UTVT</h5>
+                          </div>
+                          </a>
                       </div>
-                  </a>
+                  <div class="card">
+                      <a (click)="tusismo()" style="cursor: pointer;">
+                      <img class="card-img-top" src="assets/img/turismo_lerma.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 align=center class="card-text">TURISMO LERMA</h5>
+                          </div>
+                      </a>
+                  </div>
+                </div>
               </div>
-          </div>
+            </div>
       </div>
     </div>
     <div class="content-header mb-2 divisor" style=" border-top-style: solid;">
@@ -51,6 +55,52 @@
         </div>
       </div>
     </div>
-    <!-- /.container-fluid -->
-    <!-- /.content -->
+    <div class="content">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <div align=center class="row mb-5">
+              <div class="col mb-5">
+                <app-grafica-html></app-grafica-html>
+              </div>
+              <div class="col mb-5">
+                <app-grafica-javascript></app-grafica-javascript>
+              </div>
+              <div class="col mb-5">
+                <app-grafica-css></app-grafica-css>
+              </div>
+            </div>
+            <div align=center class="row mb-5">
+              <div class="col mb-5">
+                <app-grafica-laravel></app-grafica-laravel>
+              </div>
+              <div class="col mb-5">
+                <app-grafica-jquery></app-grafica-jquery>
+              </div>
+              <div class="col mb-5">
+                <app-grafica-bootstrap></app-grafica-bootstrap>
+              </div>
+            </div>
+            <div align=center class="row">
+              <div class="col mb-5">
+                <app-grafica-php></app-grafica-php>
+              </div>
+              <div class="col mb-5">
+                <app-grafica-mysql></app-grafica-mysql>
+              </div>
+              <div class="col mb-5">
+                <app-grafica-git></app-grafica-git>
+              </div>
+              <div align=center class="row mt-2">
+                <div class="col"></div>
+                <div class="col">
+                  <app-grafica-pwa></app-grafica-pwa>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
