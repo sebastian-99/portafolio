@@ -32,3 +32,18 @@
     border-right-style: solid;
     
 }
+
+.github{
+    color: grey;
+}
+.github:hover{
+    color: black;
+}
+
+.linked{
+    color: blue;
+}
+
+.linked:hover{
+    color: black;
+}
