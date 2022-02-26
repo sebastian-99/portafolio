@@ -23,6 +23,7 @@ import { GraficaPhpComponent } from './espanol/habilidades/grafica-php/grafica-p
 import { GraficaMysqlComponent } from './espanol/habilidades/grafica-mysql/grafica-mysql.component';
 import { GraficaGitComponent } from './espanol/habilidades/grafica-git/grafica-git.component';
 import { GraficaPwaComponent } from './espanol/habilidades/grafica-pwa/grafica-pwa.component';
+import { SobrepaginaComponent } from './espanol/sobrepagina/sobrepagina.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,8 @@ import { GraficaPwaComponent } from './espanol/habilidades/grafica-pwa/grafica-p
     GraficaPhpComponent,
     GraficaMysqlComponent,
     GraficaGitComponent,
-    GraficaPwaComponent
+    GraficaPwaComponent,
+    SobrepaginaComponent
   ],
   imports: [
     BrowserModule,
