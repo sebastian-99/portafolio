@@ -11,6 +11,8 @@
 .letras{
     color: black; 
     font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    font-size: 35px;
 }
 
 .letrasNombre{
@@ -51,4 +53,14 @@
 .fotos{
     border: 2px solid black; 
     border-radius: 12px;
+}
+
+.paginaLink{
+    background-color: rgb(211, 210, 210);
+    border-left: solid red 6px;
+
+}
+
+.serigrafia{
+    font-family: 'Karla', sans-serif;
 }
