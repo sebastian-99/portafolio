@@ -16,13 +16,13 @@
 }
 
 .letrasNombre{
-    background-color: pink;  
+    background-color: rgb(243, 233, 235);  
     border-top-style: solid;
     border-left-style: solid;
     border-right-style: solid;
 }
 .letrasNombreProfesion{
-    background-color: pink;  
+    background-color: rgb(243, 233, 235);  
     border-bottom-style: solid;
     border-left-style: solid;
     border-right-style: solid;
