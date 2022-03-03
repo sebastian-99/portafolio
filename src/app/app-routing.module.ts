@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorComponent } from './error/error.component';
 import { ContentComponent } from './espanol/content/content.component';
 import { EspanolComponent } from './espanol/espanol.component';
 import { CorrespondenciaComponent } from './espanol/porfolio/correspondencia/correspondencia.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
     {path: 'turismo-lerma', component: TurismoComponent},
     {path: 'sobre-pagina', component: SobrepaginaComponent},
   ]},
+  {path: '**', component: ErrorComponent}
 ];
 
 @NgModule({
