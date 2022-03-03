@@ -24,6 +24,7 @@ import { GraficaMysqlComponent } from './espanol/habilidades/grafica-mysql/grafi
 import { GraficaGitComponent } from './espanol/habilidades/grafica-git/grafica-git.component';
 import { GraficaPwaComponent } from './espanol/habilidades/grafica-pwa/grafica-pwa.component';
 import { SobrepaginaComponent } from './espanol/sobrepagina/sobrepagina.component';
+import { ErrorComponent } from './error/error.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,8 @@ import { SobrepaginaComponent } from './espanol/sobrepagina/sobrepagina.componen
     GraficaMysqlComponent,
     GraficaGitComponent,
     GraficaPwaComponent,
-    SobrepaginaComponent
+    SobrepaginaComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
