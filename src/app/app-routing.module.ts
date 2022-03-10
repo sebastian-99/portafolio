@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContentEnComponent } from './english/content-en/content-en.component';
+import { EnglishComponent } from './english/english.component';
 import { ErrorComponent } from './error/error.component';
 import { ContentComponent } from './espanol/content/content.component';
 import { EspanolComponent } from './espanol/espanol.component';
@@ -16,6 +18,9 @@ const routes: Routes = [
     {path: 'correspondencia-utvt', component: CorrespondenciaComponent},
     {path: 'turismo-lerma', component: TurismoComponent},
     {path: 'sobre-pagina', component: SobrepaginaComponent},
+  ]},
+  {path: 'en', component: EnglishComponent, children:[
+    {path: 'portfolio', component: ContentEnComponent},
   ]},
   {path: '**', component: ErrorComponent}
 ];

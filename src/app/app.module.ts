@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+/* español components */
+
 import { NavbarComponent } from './espanol/navbar/navbar.component';
 import { BannerComponent } from './espanol/banner/banner.component';
 import { EspanolComponent } from './espanol/espanol.component';
@@ -24,7 +27,15 @@ import { GraficaMysqlComponent } from './espanol/habilidades/grafica-mysql/grafi
 import { GraficaGitComponent } from './espanol/habilidades/grafica-git/grafica-git.component';
 import { GraficaPwaComponent } from './espanol/habilidades/grafica-pwa/grafica-pwa.component';
 import { SobrepaginaComponent } from './espanol/sobrepagina/sobrepagina.component';
+
+/* English components*/
+
+import { EnglishComponent } from './english/english.component';
+import { NavbarComponent as NavbarComponent_en } from './english/navbar/navbar.component';
 import { ErrorComponent } from './error/error.component';
+import { BannerEnComponent } from './english/banner-en/banner-en.component';
+import { FooterEnComponent } from './english/footer-en/footer-en.component';
+import { ContentEnComponent } from './english/content-en/content-en.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +58,12 @@ import { ErrorComponent } from './error/error.component';
     GraficaGitComponent,
     GraficaPwaComponent,
     SobrepaginaComponent,
-    ErrorComponent
+    ErrorComponent,
+    EnglishComponent,
+    NavbarComponent_en,
+    BannerEnComponent,
+    FooterEnComponent,
+    ContentEnComponent
   ],
   imports: [
     BrowserModule,
