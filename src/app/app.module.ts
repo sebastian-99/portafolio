@@ -36,6 +36,10 @@ import { ErrorComponent } from './error/error.component';
 import { BannerEnComponent } from './english/banner-en/banner-en.component';
 import { FooterEnComponent } from './english/footer-en/footer-en.component';
 import { ContentEnComponent } from './english/content-en/content-en.component';
+import { EncuestaEnComponent } from './english/portfolio/encuesta-en/encuesta-en.component';
+import { CorrespondenciaEnComponent } from './english/portfolio/correspondencia-en/correspondencia-en.component';
+import { TurismoEnComponent } from './english/portfolio/turismo-en/turismo-en.component';
+import { AboutComponent } from './english/about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +67,11 @@ import { ContentEnComponent } from './english/content-en/content-en.component';
     NavbarComponent_en,
     BannerEnComponent,
     FooterEnComponent,
-    ContentEnComponent
+    ContentEnComponent,
+    EncuestaEnComponent,
+    CorrespondenciaEnComponent,
+    TurismoEnComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

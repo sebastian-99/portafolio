@@ -15,7 +15,7 @@ export class ContentEnComponent implements OnInit {
 
   encuestaCovid(){
    
-    this.routes.navigate(['es/retorno-seguro']).then(nav =>{
+    this.routes.navigate(['en/retorno-seguro-en']).then(nav =>{
       console.log("entro la wea");
     },err =>{
       console.log(err);
@@ -24,13 +24,13 @@ export class ContentEnComponent implements OnInit {
 
   correspondencia(){
 
-    this.routes.navigate(['es/correspondencia-utvt']);
+    this.routes.navigate(['en/correspondencia-utvt-en']);
 
   }
 
   tusismo(){
 
-    this.routes.navigate(['es/turismo-lerma']);
+    this.routes.navigate(['en/turismo-lerma-en']);
 
   }
 

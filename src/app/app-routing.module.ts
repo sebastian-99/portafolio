@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './english/about/about.component';
 import { ContentEnComponent } from './english/content-en/content-en.component';
 import { EnglishComponent } from './english/english.component';
+import { CorrespondenciaEnComponent } from './english/portfolio/correspondencia-en/correspondencia-en.component';
+import { EncuestaEnComponent } from './english/portfolio/encuesta-en/encuesta-en.component';
+import { TurismoEnComponent } from './english/portfolio/turismo-en/turismo-en.component';
 import { ErrorComponent } from './error/error.component';
 import { ContentComponent } from './espanol/content/content.component';
 import { EspanolComponent } from './espanol/espanol.component';
@@ -21,6 +25,10 @@ const routes: Routes = [
   ]},
   {path: 'en', component: EnglishComponent, children:[
     {path: 'portfolio', component: ContentEnComponent},
+    {path: 'retorno-seguro-en', component: EncuestaEnComponent},
+    {path: 'correspondencia-utvt-en', component: CorrespondenciaEnComponent},
+    {path: 'turismo-lerma-en', component: TurismoEnComponent},
+    {path: 'about-page', component: AboutComponent}
   ]},
   {path: '**', component: ErrorComponent}
 ];
