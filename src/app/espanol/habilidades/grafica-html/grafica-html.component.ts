@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { parseLazyRoute } from '@angular/compiler/src/aot/lazy_routes';
+import { Component, Input, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 import { ChartData, ChartOptions, ChartType } from 'chart.js';
 
 @Component({
@@ -6,12 +8,35 @@ import { ChartData, ChartOptions, ChartType } from 'chart.js';
   templateUrl: './grafica-html.component.html',
   styleUrls: ['./grafica-html.component.css']
 })
-export class GraficaHtmlComponent{
+export class GraficaHtmlComponent implements OnInit{
 
-  constructor() { }
 
+  href:string = this.router.url
+
+  ngOnInit(): void{
+    
+    
+  }
   
+  constructor(public router:Router) {
+  
+  }
 
+  simon():string[]{
+
+    let palabra:string[];
+
+    if(this.href == "/es/portafolio"){
+
+      palabra= ['Experiencia' , 'Inexperiencia']
+
+    }else{
+    
+      palabra= ['Experience' , 'Inexperience']
+    }
+
+    return palabra;
+  }
   public pieChartOptions: ChartOptions = {
     responsive: true,
     plugins:{
@@ -28,10 +53,9 @@ export class GraficaHtmlComponent{
     }
   };
 
-  
   public doughnutChartData: ChartData<'doughnut'> = {
-   
-    labels:["Experiencia", "Inexperiencia"],
+
+    labels:this.simon(),
     datasets: [
       {
         data: [80,20],

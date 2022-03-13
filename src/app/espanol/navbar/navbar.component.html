@@ -1,20 +1,30 @@
 <!-- Navbar -->
-<nav class="main-header navbar navbar-expand navbar-light navbar-white sticky-top" style="background-color: cadetblue;">
-   <div class="container">
-     <div class="order-1 order-md-3 avbar-nav navbar-no-expand ml-auto">
+<nav class="main-header navbar navbar-expand-md navbar-light navbar-white sticky-top" style="background-color: cadetblue;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
        <!-- Left navbar links -->
-       <ul class="navbar-nav">
+       <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b>Idiomas</b>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink=""><b>Español</b></a>
+            <a class="dropdown-item" routerLink="../en/portfolio"><b>English</b></a>
+          </div>
+        </li>
          <li class="nav-item">
-           <a href="#portafolio" class="nav-link text-dark"><b>Portafolio</b></a>
+           <a href="es/portafolio#portafolio" class="nav-link text-dark"><b>Portafolio</b></a>
          </li>
          <li class="nav-item">
-           <a href="#habilidades" class="nav-link text-dark"><b>Habilidades</b></a>
+           <a href="es/portafolio#habilidades" class="nav-link text-dark"><b>Habilidades</b></a>
          </li>
          <li class="nav-item">
-           <a href="#sobre" class="nav-link text-dark"><b>Sobre mí</b></a>
+           <a href="es/portafolio#sobre" class="nav-link text-dark"><b>Sobre mí</b></a>
          </li>
        </ul>
-     </div>
    </div>
  </nav>
  <!-- /.navbar -->

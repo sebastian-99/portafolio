@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ChartData, ChartOptions, ChartType } from 'chart.js';
 
 @Component({
@@ -8,7 +9,24 @@ import { ChartData, ChartOptions, ChartType } from 'chart.js';
 })
 export class GraficaBootstrapComponent{
 
-  constructor() { }
+  href:string = this.router.url
+  constructor(public router:Router) { }
+
+  simon():string[]{
+
+    let palabra:string[];
+
+    if(this.href == "/es/portafolio"){
+
+      palabra= ['Experiencia' , 'Inexperiencia']
+
+    }else{
+    
+      palabra= ['Experience' , 'Inexperience']
+    }
+
+    return palabra;
+  }
 
   public pieChartOptions: ChartOptions = {
    
@@ -30,7 +48,7 @@ export class GraficaBootstrapComponent{
   
   public doughnutChartData: ChartData<'doughnut'> = {
    
-    labels:["Experiencia", "Inexperiencia"],
+    labels:this.simon(),
     datasets: [
       {
         data: [80,20],

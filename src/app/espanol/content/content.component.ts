@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -7,11 +7,18 @@ import { Router } from '@angular/router';
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
-export class ContentComponent{
+export class ContentComponent implements OnInit{
+
+  
+
+  ngOnInit(): void {
+     
+  }
 
   constructor(public routes: Router){
 
   }
+
 
   encuestaCovid(){
    
